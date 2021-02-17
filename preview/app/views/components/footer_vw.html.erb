@@ -1,0 +1,6 @@
+
+<%= render(AblyUi::Core::Footer.new(props)) %>
+
+<% content_for :component_init_js do %>
+  AblyUi.Core.Footer();
+<% end %>

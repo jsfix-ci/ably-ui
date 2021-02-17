@@ -1,0 +1,43 @@
+@layer components {
+  .ui-footer {
+    --icon-color-linkedin: #1269bf;
+    --icon-color-twitter: #2caae1;
+    --icon-color-glassdoor: #0baa41;
+    --icon-color-github: #000000;
+
+    background: var(--color-light-grey);
+    @apply relative;
+
+    &-social {
+      color: var(--color-cool-black);
+
+      a:hover #ui-footer-icon {
+        &-twitter {
+          color: var(--icon-color-twitter);
+        }
+        &-linkedin {
+          color: var(--icon-color-linkedin);
+        }
+        &-github {
+          color: var(--icon-color-github);
+        }
+        &-glassdoor {
+          color: var(--icon-color-glassdoor);
+        }
+      }
+    }
+
+    &-awards {
+      img {
+        width: 96px;
+        height: 96px;
+      }
+    }
+
+    &-content {
+      @apply max-w-screen-xl py-24 lg:py-32 mx-auto;
+      @apply grid grid-cols-1;
+      @apply px-24 md:px-32 lg:px-32 xl:px-64;
+    }
+  }
+}
