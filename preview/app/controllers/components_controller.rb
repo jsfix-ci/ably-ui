@@ -14,7 +14,7 @@ class ComponentsController < ApplicationController
 
   def footer
     template = "footer_#{framework}.html.erb"
-    render template
+    render template, locals: { props: framework == "react" ? react_props : vw_props }
   end
 
   private
