@@ -1,11 +1,10 @@
 describe("Footer Parity test", () => {
-  
   it("looks the same on macbook-15", () => {
     cy.viewport("macbook-15");
     cy.compareComponents({
       reactComponentUrl: "/components/footer",
       viewComponentUrl: "/components/footer?vw=true",
-      selector: '[data-id="footer-root"]',
+      selector: '[data-id="footer"]',
     });
   });
 
@@ -14,7 +13,7 @@ describe("Footer Parity test", () => {
     cy.compareComponents({
       reactComponentUrl: "/components/footer",
       viewComponentUrl: "/components/footer?vw=true",
-      selector: '[data-id="footer-root"]',
+      selector: '[data-id="footer"]',
     });
   });
 
@@ -23,7 +22,8 @@ describe("Footer Parity test", () => {
     cy.compareComponents({
       reactComponentUrl: "/components/footer",
       viewComponentUrl: "/components/footer?vw=true",
-      selector: '[data-id="footer-root"]',
+      selector: '[data-id="footer"]',
     });
   });
 });
+

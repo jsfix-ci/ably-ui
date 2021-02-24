@@ -1,4 +1,3 @@
-
 import { fixSnapshotSpec } from "../../../support";
 
 beforeEach(fixSnapshotSpec(__filename));
@@ -11,7 +10,7 @@ describe("Footer Snapshot Test", () => {
     });
 
     it("test case common to both", () => {
-      cy.get("[data-id='footer-root']").toMatchSnapshot();
+      cy.get("[data-id='footer']").toMatchSnapshot();
     });
   };
 
@@ -27,3 +26,4 @@ describe("Footer Snapshot Test", () => {
     sharedSpecs(`${url}?iframework=vw`);
   });
 });
+
