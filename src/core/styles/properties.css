@@ -95,4 +95,10 @@
 
   /* Expose component values for cross-component usage */
   --ui-meganav-height: 4rem;
+
+  /* flat colors for social icons */
+  --icon-color-linkedin: #1269bf;
+  --icon-color-twitter: #2caae1;
+  --icon-color-glassdoor: #0baa41;
+  --icon-color-github: #000000;
 }

@@ -169,29 +169,32 @@ export default function Footer({ paths }) {
           </div>
 
           <div className="ui-footer-social pt-32 flex align-middle">
-            <a className="pr-24" href="https://twitter.com/ablyrealtime">
+            <a className="ui-footer-social pr-24" href="https://twitter.com/ablyrealtime">
               <svg className="w-24 h-24" id="ui-footer-icon-twitter">
                 <use xlinkHref="#sprite-twitter"></use>
               </svg>
             </a>
-            <a className="pr-24" href="https://www.linkedin.com/company/ably-realtime">
+            <a className="ui-footer-social pr-24" href="https://www.linkedin.com/company/ably-realtime">
               <svg className="w-24 h-24" id="ui-footer-icon-linkedin">
                 <use xlinkHref="#sprite-linkedin"></use>
               </svg>
             </a>
-            <a className="pr-24" href="https://github.com/ably/">
+            <a className="ui-footer-social pr-24" href="https://github.com/ably/">
               <svg className="w-24 h-24" id="ui-footer-icon-github">
                 <use xlinkHref="#sprite-github"></use>
               </svg>
             </a>
-            <a className="flex flex-row border-l-2 pl-24" href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm">
+            <a className="ui-footer-social flex flex-row border-l-2 pl-24" href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm">
               <svg className="w-24 h-24" id="ui-footer-icon-glassdoor">
                 <use xlinkHref="#sprite-glassdoor"></use>
               </svg>
             </a>
             <div className="text-menu3 pl-16 leading-5 -mt-8">
               <strong className="block">Were hiring! </strong>
-              <span className="text-gui-default">learn</span> more at Glass Door
+              <a href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm" className="text-gui-default">
+                learn
+              </a>
+              &nbsp;more at Glass Door
             </div>
           </div>
         </div>

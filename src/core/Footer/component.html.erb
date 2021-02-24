@@ -84,38 +84,41 @@
       </div>
 
       <div class="ui-footer-social pt-32 flex align-middle">
-        <a class="pr-24" href="https://twitter.com/ablyrealtime">
+        <a class="ui-footer-social pr-24" href="https://twitter.com/ablyrealtime">
           <svg class="w-24 h-24" id="ui-footer-icon-twitter">
             <use xlink:href="#sprite-twitter"></use>
           </svg>
         </a>
-        <a class="pr-24" href="https://www.linkedin.com/company/ably-realtime">
+        <a class="ui-footer-social pr-24" href="https://www.linkedin.com/company/ably-realtime">
           <svg class="w-24 h-24" id="ui-footer-icon-linkedin">
             <use xlink:href="#sprite-linkedin"></use>
           </svg>
         </a>
-        <a class="pr-24" href="https://github.com/ably/">
+        <a class="ui-footer-social pr-24" href="https://github.com/ably/">
           <svg class="w-24 h-24" id="ui-footer-icon-github">
             <use xlink:href="#sprite-github"></use>
           </svg>
         </a>
-        <a
-          class="flex flex-row border-l-2 pl-24"
-          href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm">
-          <svg class="w-24 h-24" id= "ui-footer-icon-glassdoor">
+        <a class="ui-footer-social flex flex-row border-l-2 pl-24" href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm">
+          <svg class="w-24 h-24" id="ui-footer-icon-glassdoor">
             <use xlink:href="#sprite-glassdoor"></use>
           </svg>
         </a>
-        <div class="text-menu3 pl-16 leading-5 -mt-6">
+        <div class="text-menu3 pl-16 leading-5 -mt-8">
           <strong class="block">Were hiring! </strong>
-          <span class="text-gui-default">learn</span> more at Glass Door
+          <a href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm" class="text-gui-default">
+            learn
+          </a>
+          &nbsp;more at Glass Door
         </div>
       </div>
     </div>
 
-    <div class="ui-footer-awards md:text-right sm:col-span-full md:col-span-1">
-      <%= image_tag("ably_ui/core/images/rocket-list-2021.png", alt: "Rocket List 2021", class: "mr-24 w-96 h-96") %>
-      <%= image_tag("ably_ui/core/images/flexible-companies.png", alt: "Flexible Companies 2021", class: "w-96 h-96") %>
-    </div>
+  </div>
+
+  <div class="ui-footer-awards md:text-right sm:col-span-full md:col-span-1">
+    <%= image_tag("ably_ui/core/images/rocket-list-2021.png", alt: "Rocket List 2021", class: "mr-24 w-96 h-96") %>
+    <%= image_tag("ably_ui/core/images/flexible-companies.png", alt: "Flexible Companies 2021", class: "w-96 h-96") %>
   </div>
 </section>
+
