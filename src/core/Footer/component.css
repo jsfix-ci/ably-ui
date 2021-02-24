@@ -6,10 +6,6 @@
       color: var(--color-cool-black);
 
       .ui-footer-social:hover {
-        #ui-footer-icon-twitter {
-          color: var(--icon-color-twitter);
-        }
-
         #ui-footer-icon-linkedin {
           color: var(--icon-color-linkedin);
         }

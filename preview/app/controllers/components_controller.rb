@@ -14,7 +14,7 @@ class ComponentsController < ApplicationController
 
   def footer
     template = "footer_#{framework}.html.erb"
-    render template, locals: { props: framework == "react" ? react_props : vw_props }
+    render template, locals: { props: framework == "react" ? footer_react_props : {} }
   end
 
   private
@@ -32,6 +32,16 @@ class ComponentsController < ApplicationController
 
   def vw_props
     signed_in? ? { session_data: helpers.session_data } : {}
+  end
+
+  def footer_react_props
+    {
+      paths: {
+        ably_stack: helpers.asset_path('ably_ui/core/images/ably-stack.svg'),
+        rocket_list: helpers.asset_path('ably_ui/core/images/rocket-list-2021.png'),
+        flexible_companies: helpers.asset_path('ably_ui/core/images/flexible-companies.png')
+      }
+    }
   end
 
   def page_layout

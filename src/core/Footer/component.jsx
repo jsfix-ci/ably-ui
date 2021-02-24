@@ -1,12 +1,9 @@
-import React, { useEffect } from "react";
-import T from "prop-types";
+import React from 'react';
+import T from 'prop-types';
 
-import "./component.css";
+import './component.css';
 
 export default function Footer({ paths }) {
-  const imagePath = paths.logo.replace(/([^\/]+)$/, "");
-  const image = (filename, alt = "") => <img className="mr-24 w-96 h-96" src={imagePath + filename} alt={alt} />;
-
   return (
     <section className="ui-footer" data-id="footer">
       <div className="ui-footer-content ui-grid-gap sm:grid-cols-2 md:grid-cols-6">
@@ -166,8 +163,8 @@ export default function Footer({ paths }) {
           </div>
 
           <div className="ui-footer-social pt-32 flex align-middle">
-            <a className="ui-footer-social pr-24" href="https://twitter.com/ablyrealtime">
-              <svg className="w-24 h-24" id="ui-footer-icon-twitter">
+            <a className="ui-footer-social pr-24 text-cool-black hover:text-icon-twitter" href="https://twitter.com/ablyrealtime">
+              <svg className="w-24 h-24">
                 <use xlinkHref="#sprite-twitter"></use>
               </svg>
             </a>
@@ -197,8 +194,8 @@ export default function Footer({ paths }) {
         </div>
 
         <div className="ui-footer-awards md:text-right sm:col-span-full md:col-span-1">
-          {image("rocket-list-2021.png", "Rocket List 2021")}
-          {image("flexible-companies.png", "Flexible Companies 2021")}
+          <img src={paths.rocketList} className="mr-24 w-96 h-96" alt="Rocket List 2021" />
+          <img src={paths.flexibleCompanies} className="mr-24 w-96 h-96" alt="Flexible Companies 2021" />
         </div>
       </div>
     </section>
@@ -208,5 +205,7 @@ export default function Footer({ paths }) {
 Footer.propTypes = {
   paths: T.shape({
     ablyStack: T.string,
+    rocketList: T.string,
+    flexibleCompanies: T.string,
   }),
 };
