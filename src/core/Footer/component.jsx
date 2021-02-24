@@ -15,7 +15,7 @@ export default function Footer({ paths }) {
       <div className="ui-footer-content ui-grid-gap sm:grid-cols-2 md:grid-cols-6">
         <div className="sm:col-span-full md:col-span-2">
           <div className="flex flex-row">
-            <img className="mr-24" style={{ marginTop: "-4px" }} src={paths.ablyStack} alt="Ably homepage" />
+            <img className="mr-24 -mt-4" src={paths.ablyStack} alt="Ably homepage" />
             <h5 className="text-overline2 mt-8 col-span-full font-bold uppercase">The Ably Platform</h5>
           </div>
 
@@ -189,7 +189,7 @@ export default function Footer({ paths }) {
                 <use xlinkHref="#sprite-glassdoor"></use>
               </svg>
             </a>
-            <div className="text-menu3 pl-16 leading-5" style={{ marginTop: "-8px" }}>
+            <div className="text-menu3 pl-16 leading-5 -mt-8">
               <strong className="block">Were hiring! </strong>
               <span className="text-gui-default">learn</span> more at Glass Door
             </div>
