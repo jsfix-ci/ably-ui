@@ -184,7 +184,7 @@ export default function Footer({ paths }) {
                 <use xlinkHref="#sprite-github"></use>
               </svg>
             </a>
-            <a className="footer__Glassdoor flex flex-row border-l-2 pl-24" href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm">
+            <a className="flex flex-row border-l-2 pl-24" href="https://www.glassdoor.co.uk/Overview/Working-at-Ably-EI_IE2184188.11,15.htm">
               <svg className="w-24 h-24" id="ui-footer-icon-glassdoor">
                 <use xlinkHref="#sprite-glassdoor"></use>
               </svg>
