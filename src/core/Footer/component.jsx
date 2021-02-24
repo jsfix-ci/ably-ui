@@ -15,7 +15,7 @@ export default function Footer({ paths }) {
       <div className="ui-footer-content ui-grid-gap sm:grid-cols-2 md:grid-cols-6">
         <div className="sm:col-span-full md:col-span-2">
           <div className="flex flex-row">
-            <img className="mr-24 -mt-4" src={paths.ablyStack} alt="Ably homepage" />
+            <img className="ml-12 mr-24 -mt-4" src={paths.ablyStack} alt="Ably homepage" />
             <h5 className="text-overline2 mt-8 col-span-full font-bold uppercase">The Ably Platform</h5>
           </div>
 
