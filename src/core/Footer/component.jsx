@@ -6,7 +6,7 @@ import initialize from "./component.js";
 
 export default function Footer({ paths }) {
   const imagePath = paths.logo.replace(/([^\/]+)$/, "");
-  const image = (filename, alt = "") => <img className="mr-24" src={imagePath + filename} alt={alt} />;
+  const image = (filename, alt = "") => <img className="mr-24 w-96 h-96" src={imagePath + filename} alt={alt} />;
 
   useEffect(() => initialize(), []);
 
