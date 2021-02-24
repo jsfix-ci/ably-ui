@@ -19,6 +19,12 @@
   --color-gui-unavailable: #a8a8a8;
   --color-gui-error: #fb0c0c;
 
+  /* flat colors for social icons */
+  --icon-color-linkedin: #1269bf;
+  --icon-color-twitter: #2caae1;
+  --icon-color-glassdoor: #0baa41;
+  --icon-color-github: #000000;
+
   --gradient-active-orange: linear-gradient(
     61.2deg,
     var(--color-active-orange) 15%,
@@ -71,6 +77,7 @@
   --spacing-40: 2.5rem;
   --spacing-48: 3rem;
   --spacing-64: 4rem;
+
   --spacing-96: 6rem;
 
   --spacing-btn: 0.9375rem 1.5rem;
@@ -95,10 +102,4 @@
 
   /* Expose component values for cross-component usage */
   --ui-meganav-height: 4rem;
-
-  /* flat colors for social icons */
-  --icon-color-linkedin: #1269bf;
-  --icon-color-twitter: #2caae1;
-  --icon-color-glassdoor: #0baa41;
-  --icon-color-github: #000000;
 }

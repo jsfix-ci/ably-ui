@@ -60,9 +60,10 @@ module.exports = {
     fontFamily: {
       sans: ["NEXT Book", "Arial", "Helvetica", "sans-serif"],
     },
-    margin: (theme) => ({
+    margin: (theme, { negative }) => ({
       auto: "auto",
       ...theme("spacing"),
+      ...negative(theme('spacing')),
     }),
     padding: (theme) => ({
       btn: "var(--spacing-btn)",
