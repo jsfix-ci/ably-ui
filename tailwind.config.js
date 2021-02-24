@@ -88,6 +88,7 @@ module.exports = {
       40: "var(--spacing-40)",
       48: "var(--spacing-48)",
       64: "var(--spacing-64)",
+      96: "var(--spacing-96)",
     },
     maxWidth: (theme, { breakpoints }) => ({
       ...breakpoints(theme("screens")),
