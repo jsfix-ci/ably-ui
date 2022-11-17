@@ -49,7 +49,7 @@ const showNotice = (bannerContainer) => {
 };
 
 const setupRememberClosed = (cookieId, noticeId) => {
-  const cookie = Cookie.get(cookieId) || "";
+  const cookie = JSON.parse(Cookie.get(cookieId)) || "";
 
   Cookie.set(cookieId, `${cookie.replace(`${noticeId},`, "") + noticeId},`, {
     expires: COOKIE_EXPIRY,
@@ -57,7 +57,7 @@ const setupRememberClosed = (cookieId, noticeId) => {
 };
 
 const hasBeenClosedBefore = (cookieId, noticeId) =>
-  (Cookie.get(cookieId) || "").includes(noticeId);
+  (JSON.parse(Cookie.get(cookieId)) || "").includes(noticeId);
 
 const setupNoticeCollapse = (bannerContainer) => {
   const scrollTop = window.scrollY;
