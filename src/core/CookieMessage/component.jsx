@@ -11,7 +11,7 @@ export default function CookieMessage({ cookieId, urlBase }) {
   const [hideCookieMessage, setHideCookieMessage] = useState(true);
 
   useEffect(() => {
-    const isCookieSet = Cookie.get(cookieId) ? true : false;
+    const isCookieSet = JSON.parse(Cookie.get(cookieId)) ? true : false;
     setHideCookieMessage(isCookieSet);
   }, []);
 
